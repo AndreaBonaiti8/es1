@@ -10,22 +10,22 @@ namespace es1
     {
         public class Prodotto
         {
-            private String nome;
+            private string nome;
             private double prezzo;
             public Prodotto()
             {
-                this.nome = "";
-                this.prezzo = 0.0;
+                nome = "Prodotto1";
+                prezzo = 10.0;
             }
 
-            public Prodotto(String nome, double prezzo)
+            public Prodotto(string nome, double prezzo)
             {
                 this.nome = nome;
                 this.prezzo = prezzo;
             }
 
 
-            public String getNome()
+            public string getNome()
             {
                 return nome;
             }
@@ -36,10 +36,10 @@ namespace es1
             }
             static void Main(string[] args)
             {
-                Prodotto prodotto1 = new Prodotto("Prodotto1", 19.99);
+                Prodotto prodotto1 = new Prodotto();
                 Prodotto prodotto2 = new Prodotto("Prodotto2", 29.99);
-                Console.WriteLine("Prodotto 1: " + prodotto1.getNome() + ", Prezzo: " + prodotto1.getPrezzo());
-                Console.WriteLine("Prodotto 2: " + prodotto2.getNome() + ", Prezzo: " + prodotto2.getPrezzo());
+                Console.WriteLine("Nome: " + prodotto1.getNome() + ", Prezzo: " + prodotto1.getPrezzo());
+                Console.WriteLine("Nome: " + prodotto2.getNome() + ", Prezzo: " + prodotto2.getPrezzo());
                 Console.Read(); 
             }
         }
